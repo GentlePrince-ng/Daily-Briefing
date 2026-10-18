@@ -1,0 +1,25 @@
+# clasp project binding and login — never commit
+.clasp.json
+.clasprc.json
+
+# Secrets under any name. Runtime config belongs in Script Properties;
+# these rules are a backstop, not the mechanism.
+.env
+.env.*
+!.env.example
+*secret*
+*credential*
+*-key.json
+*token*.json
+
+# Local exports pulled out of a real Sheet
+*.csv
+*.xlsx
+exports/
+
+node_modules/
+Thumbs.db
+.DS_Store
+
+# Per-deployment IDs; never public
+src/LocalConfig.gs

@@ -1,0 +1,11 @@
+{
+  "name": "daily-briefing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Firehose channel to taxonomy to daily decision brief, on Google Apps Script + Gemini.",
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\"",
+    "check": "node -e \"require('./tests/harness').load()\""
+  },
+  "license": "MIT"
+}
